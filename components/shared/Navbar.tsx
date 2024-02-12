@@ -1,10 +1,12 @@
+import { AiOutlineUser } from "react-icons/ai";
 import Container from "./Container";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const logo = (
     <svg
       width="148"
-      height="48"
+      height="35"
       viewBox="0 0 148 48"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -94,8 +96,26 @@ const Navbar = () => {
 
   return (
     <Container>
-      <nav>
-        <button>login / register </button>
+      <nav className="py-3 flex justify-between items-center">
+        <div>{logo}</div>
+
+        <ul className="flex items-center gap-6 text-sm">
+          <li>Hotel</li>
+          <li>Flight</li>
+          <li>Holiday</li>
+          <li>
+            <Dropdown />
+          </li>
+          <li>Medical</li>
+          <li>Pormotional</li>
+
+          <li>
+            <Dropdown />
+          </li>
+        </ul>
+        <button className="bg-[#1D91CC] text-white p-2 hover:bg-[#3f7692] duration-300 rounded-full flex justify-center items-center gap-2">
+          <AiOutlineUser className="text-2xl" />
+        </button>
       </nav>
     </Container>
   );

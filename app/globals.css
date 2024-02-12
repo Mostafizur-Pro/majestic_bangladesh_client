@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 .active-Navlink {
-    @apply bg-rose-500 text-white font-medium text-[18px] 
+  @apply bg-rose-500 text-white font-medium text-[18px];
 }
 .normal-Navlink {
-    @apply font-medium text-gray-500 text-[16px] hover:bg-gray-200 duration-300
+  @apply font-medium text-gray-500 text-[16px] hover:bg-gray-200 duration-300;
+}
+
+.dropdown_span {
+  @apply px-6 py-2 bg-white cursor-pointer hover:bg-[#1D91CC] hover:rounded-lg hover:duration-0 hover:text-white duration-300;
+}
+
+.link_hover {
+  @apply hover:text-[#1D91CC] duration-300;
 }
