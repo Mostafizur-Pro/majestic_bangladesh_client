@@ -16,3 +16,7 @@
 .link_hover {
   @apply hover:text-[#1D91CC] duration-300;
 }
+
+.desktop_container {
+  @apply lg:w-[80%] mx-auto
+}
