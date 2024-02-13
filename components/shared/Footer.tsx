@@ -1,6 +1,7 @@
 import appleIcon from "../../public/icon/apple-icon.svg";
 import playStoreIcon from "../../public/icon/play-store-icon.svg";
 import appIcon from "../../public/icon/logo-blue.svg";
+import footerCompImg1 from "../../public/icon/footer-comp-1.svg";
 import Image from "next/image";
 const Footer = () => {
   return (
@@ -52,7 +53,23 @@ const Footer = () => {
         </div>
       </section>
       {/*//? footer ending */}
-      <div></div>
+      <section className="flex justify-between">
+        <div className="flex gap-5">
+          <Image src={footerCompImg1}></Image>
+          <Image src={footerCompImg1}></Image>
+          <Image src={footerCompImg1}></Image>
+          <Image src={footerCompImg1}></Image>
+          <Image src={footerCompImg1}></Image>
+        </div>
+        <div className="flex gap-5">
+          <Image src={footerCompImg1}></Image>
+          <Image src={footerCompImg1}></Image>
+          <Image src={footerCompImg1}></Image>
+          <Image src={footerCompImg1}></Image>
+          <Image src={footerCompImg1}></Image>
+        </div>
+      </section>
+      <hr className="border border-[#EDEDED] mt-8" />
     </section>
   );
 };
