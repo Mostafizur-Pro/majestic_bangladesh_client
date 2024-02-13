@@ -1,10 +1,11 @@
 import appleIcon from "../../public/icon/apple-icon.svg";
 import playStoreIcon from "../../public/icon/play-store-icon.svg";
+import appIcon from "../../public/icon/logo-blue.svg";
 import Image from "next/image";
 const Footer = () => {
   return (
     <section className="max-w-7xl mx-auto pt-6">
-      {/* footer Heading */}
+      {/* //? footer Heading section */}
       <section className="flex items-center justify-between">
         <div className=" flex gap-4">
           <div className="w- rounded bg-[#11577A]">
@@ -28,9 +29,29 @@ const Footer = () => {
           </p>
         </div>
       </section>
-      {/* footer body */}
-      <div></div>
-      {/* footer ending */}
+      {/*//? footer body section */}
+      <hr className="mb-8 mt-8 border border-[#EDEDED]" />
+      <section className="mb-6 flex justify-between">
+        <div>
+          <h1 className="font-bold text-2xl">Useful links</h1>
+          <ul className="text-lg leading-9">
+            <li className="">What&apos;s Next?</li>
+            <li>Contact Us</li>
+            <li>Visa Issue</li>
+            <li>Online Ticket</li>
+            <li>Best Hotel Booking</li>
+          </ul>
+        </div>
+        <div className="flex flex-col items-end gap-8">
+          <Image src={appIcon}></Image>
+          <p>Support Phone: 987 654 320 21</p>
+          <p>
+            Address of the head office: Tehran, Azadi Square, Azadi St., Jihoun
+            St., West Tos.
+          </p>
+        </div>
+      </section>
+      {/*//? footer ending */}
       <div></div>
     </section>
   );
