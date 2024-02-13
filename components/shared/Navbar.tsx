@@ -94,6 +94,55 @@ const Navbar = () => {
     </svg>
   );
 
+  const visaMenu = [
+    {
+      name: "Visa Application",
+      path: "visa-applications",
+    },
+    {
+      name: "Visa Guide",
+      path: "visa-guide",
+    },
+  ];
+
+  const loginMenu = [
+    {
+      name: "Sign in",
+      path: "signin",
+    },
+    {
+      name: "Sign up",
+      path: "signup",
+    },
+  ];
+
+  const otherMenu = [
+    {
+      name: "About",
+      path: "/about",
+    },
+    {
+      name: "Bilito",
+      path: "/bilito",
+    },
+    {
+      name: "Why Bilito?",
+      path: "/whybilito",
+    },
+    {
+      name: "Travel Guide",
+      path: "/travelguide",
+    },
+    {
+      name: "News",
+      path: "/news",
+    },
+    {
+      name: "FAQ & Support",
+      path: "/faq",
+    },
+  ];
+
   return (
     <Container>
       <nav className="py-3 flex justify-between items-center">
@@ -104,17 +153,23 @@ const Navbar = () => {
           <li>Flight</li>
           <li>Holiday</li>
           <li>
-            <Dropdown />
+            <Dropdown menu={visaMenu} icon={true}>
+              Visa
+            </Dropdown>
           </li>
           <li>Medical</li>
           <li>Pormotional</li>
 
           <li>
-            <Dropdown />
+            <Dropdown menu={otherMenu} icon={true}>
+              Others
+            </Dropdown>
           </li>
         </ul>
-        <button className="bg-[#1D91CC] text-white p-2 hover:bg-[#3f7692] duration-300 rounded-full flex justify-center items-center gap-2">
-          <AiOutlineUser className="text-2xl" />
+        <button className="bg-[#1D91CC] p-2 hover:bg-[#3f7692] duration-300 rounded-full flex justify-center items-center gap-2">
+          <Dropdown menu={loginMenu} icon={false} width={"w-fit"}>
+            <AiOutlineUser className="text-2xl text-white" />
+          </Dropdown>
         </button>
       </nav>
     </Container>
