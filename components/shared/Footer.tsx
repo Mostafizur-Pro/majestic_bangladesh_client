@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import appleIcon from "../../public/icon/apple-icon.svg";
 import fbIcon from "../../public/icon/fb-icon.svg";
+import gotopIconBlack from "../../public/icon/goTopIcon-black.svg";
 import instragramIcon from "../../public/icon/instra-icon.svg";
 import inIcon from "../../public/icon/linkedin-icon.svg";
 import appIcon from "../../public/icon/logo-blue.svg";
@@ -13,8 +15,6 @@ import img2 from "../../public/images/footer/img2.svg";
 import img3 from "../../public/images/footer/img3.svg";
 import img4 from "../../public/images/footer/img4.svg";
 import img5 from "../../public/images/footer/img5.svg";
-import gotopIconBlack from "../../public/icon/goTopIcon-black.svg";
-import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -47,7 +47,7 @@ const Footer = () => {
       <hr className="mb-4 mt-4 md:mb-8 md:mt-8 border border-[#EDEDED]" />
       <section className="mb-6 md:flex md:flex-row-reverse justify-between">
         <div className="flex flex-col items-center md:items-end gap-1 md:gap-8">
-          <Image src={appIcon}></Image>
+          <Image alt="logo" src={appIcon}></Image>
           <p>Support Phone: 987 654 320 21</p>
           <p className="text-center">
             Address of the head office: Tehran, Azadi Square, Azadi St., Jihoun
