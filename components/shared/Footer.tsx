@@ -18,7 +18,7 @@ import img5 from "../../public/images/footer/img5.svg";
 
 const Footer = () => {
   return (
-    <section className="max-w-7xl mx-auto pt-6">
+    <section className="max-w-7xl mx-auto pt-6 mt-12">
       {/* //? footer Heading section */}
       <section className="flex flex-col md:flex-row items-center justify-between">
         <div className=" flex gap-4">
@@ -44,10 +44,12 @@ const Footer = () => {
         </div>
       </section>
       {/*//? footer body section */}
+
       <hr className="mb-4 mt-4 md:mb-8 md:mt-8 border border-[#EDEDED]" />
       <section className="mb-6 md:flex md:flex-row-reverse justify-between">
         <div className="flex flex-col items-center md:items-end gap-1 md:gap-8">
           <Image alt="logo" src={appIcon}></Image>
+
           <p>Support Phone: 987 654 320 21</p>
           <p className="text-center">
             Address of the head office: Tehran, Azadi Square, Azadi St., Jihoun
@@ -78,6 +80,7 @@ const Footer = () => {
       {/*//? footer ending */}
       <section className="flex md:flex-row flex-col items-center md:gap-0 gap-4 md:justify-between">
         <div className="flex gap-5">
+
           <Image alt="company 1" src={img1}></Image>
           <Image alt="company 2" src={img2}></Image>
           <Image alt="company 3" src={img3}></Image>
@@ -106,6 +109,7 @@ const Footer = () => {
             </Link>
           </div>
           <p className="text-[#0077DB]">diginieit@gmail.com</p>
+
         </div>
       </section>
       <hr className="border border-[#EDEDED] md:mt-8 mt-3" />
