@@ -5,7 +5,7 @@ import footerCompImg1 from "../../public/icon/footer-comp-1.svg";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <section className="max-w-7xl mx-auto pt-6">
+    <section className="max-w-7xl mx-auto pt-6 mt-12">
       {/* //? footer Heading section */}
       <section className="flex items-center justify-between">
         <div className=" flex gap-4">
@@ -44,7 +44,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col items-end gap-8">
-          <Image src={appIcon}></Image>
+          <Image alt="" src={appIcon}></Image>
           <p>Support Phone: 987 654 320 21</p>
           <p>
             Address of the head office: Tehran, Azadi Square, Azadi St., Jihoun
@@ -55,18 +55,18 @@ const Footer = () => {
       {/*//? footer ending */}
       <section className="flex justify-between">
         <div className="flex gap-5">
-          <Image src={footerCompImg1}></Image>
-          <Image src={footerCompImg1}></Image>
-          <Image src={footerCompImg1}></Image>
-          <Image src={footerCompImg1}></Image>
-          <Image src={footerCompImg1}></Image>
+          <Image alt="" src={footerCompImg1}></Image>
+          <Image alt="" src={footerCompImg1}></Image>
+          <Image alt="" src={footerCompImg1}></Image>
+          <Image alt='' src={footerCompImg1}></Image>
+          <Image alt="" src={footerCompImg1}></Image>
         </div>
         <div className="flex gap-5">
-          <Image src={footerCompImg1}></Image>
-          <Image src={footerCompImg1}></Image>
-          <Image src={footerCompImg1}></Image>
-          <Image src={footerCompImg1}></Image>
-          <Image src={footerCompImg1}></Image>
+        <Image alt="" src={footerCompImg1}></Image>
+          <Image alt="" src={footerCompImg1}></Image>
+          <Image alt="" src={footerCompImg1}></Image>
+          <Image alt='' src={footerCompImg1}></Image>
+          <Image alt="" src={footerCompImg1}></Image>
         </div>
       </section>
       <hr className="border border-[#EDEDED] mt-8" />
