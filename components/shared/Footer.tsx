@@ -16,10 +16,12 @@ import img3 from "../../public/images/footer/img3.svg";
 import img4 from "../../public/images/footer/img4.svg";
 import img5 from "../../public/images/footer/img5.svg";
 import FooterCTA from "../FooterCTA";
+import Featured from "../Featured";
 
 const Footer = () => {
   return (
     <>
+      <Featured></Featured>
       <FooterCTA></FooterCTA>
       <section className="max-w-7xl mx-auto pt-6">
         {/* //? footer Heading section */}
