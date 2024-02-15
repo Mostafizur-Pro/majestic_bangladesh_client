@@ -1,12 +1,16 @@
 "use client";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 
 const Form = () => {
   const [show, setShow] = useState(false);
 
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+  }
+
   return (
-    <form className="flex flex-col justify-center items-center mt-10 ">
+    <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center mt-10 ">
       <div className="flex flex-col items-end">
         <label className="flex flex-col mb-6" htmlFor="email">
           <span className="text-sm">Email</span>

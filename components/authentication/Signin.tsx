@@ -40,6 +40,7 @@ const Signin = () => {
 
         {/* divider */}
         <div className="divider w-64 text-sm mx-auto my-6">OR</div>
+        
         <Socials />
 
         <span className="text-sm text-center mt-3">
