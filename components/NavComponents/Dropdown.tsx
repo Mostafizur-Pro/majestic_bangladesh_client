@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState, ReactNode } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -58,7 +59,7 @@ const Dropdown: React.FC<DropdownProps> = ({ children, icon, menu, width }) => {
       <div
         onMouseEnter={handleMenuMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className={`dropdown_menu absolute flex flex-col rounded-xl shadow-xl p-1 top-[10%] z-50 ${
+        className={`dropdown_menu absolute flex flex-col rounded-xl shadow-xl p-1 top-[10%] bg-white z-50 ${
           isOpen
             ? "opacity-100 duration-300 translate-y-0"
             : "opacity-0 duration-500 pointer-events-none -translate-y-[400px]"
@@ -66,9 +67,9 @@ const Dropdown: React.FC<DropdownProps> = ({ children, icon, menu, width }) => {
       >
         {/* change span to Link when pages are added */}
         {menu?.map((link, index) => (
-          <span key={index} className="dropdown_span">
-            {link.name}
-          </span>
+          <Link href={link?.path} key={index} className="dropdown_span">
+            {link?.name}
+          </Link>
         ))}
       </div>
     </>

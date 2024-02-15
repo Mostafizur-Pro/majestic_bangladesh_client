@@ -1,5 +1,6 @@
 import { AiOutlineUser } from "react-icons/ai";
 import Dropdown from "./Dropdown";
+import Link from "next/link";
 
 const DesktopView = () => {
   const logo = (
@@ -144,7 +145,7 @@ const DesktopView = () => {
   return (
     <>
       <nav className="py-3 flex justify-between items-center">
-        <div>{logo}</div>
+        <Link href={`/`}>{logo}</Link>
 
         <ul className="flex items-center gap-6 text-sm">
           <li>Hotel</li>

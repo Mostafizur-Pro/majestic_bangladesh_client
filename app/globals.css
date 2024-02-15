@@ -20,3 +20,10 @@
 .desktop_container {
   @apply lg:w-[80%] mx-auto
 }
+
+.text_Primary {
+  @apply text-[#1D91CC]
+}
+.bg_primary {
+  @apply bg-[#1D91CC]
+}
