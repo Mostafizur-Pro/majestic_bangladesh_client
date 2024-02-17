@@ -8,9 +8,9 @@ import FlightsSection from "./FlightsSection";
 
 const Featured = () => {
   return (
-    <>
-      <FlightsSection></FlightsSection>
-      <section className=" grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  border-2 justify-items-center mt-8 justify-between max-w-7xl mx-auto mb-14 gap-4">
+    <div className="">
+    
+      <section className=" grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  justify-items-center mt-8 justify-between mb-14 gap-4">
         <div className=" flex flex-col gap-6 ">
           <Image src={img1} alt="img1"></Image>
           <Image src={img2} alt="img1"></Image>
@@ -22,7 +22,7 @@ const Featured = () => {
           <Image src={img4} alt="img1"></Image>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

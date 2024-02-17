@@ -7,7 +7,7 @@ import planeImg from "../public/images/featured/plane.svg";
 
 const FlightsSection = () => {
   return (
-    <div className="mt-32 max-w-7xl mx-auto">
+    <div className="mt-32 ">
       <div className="items-center sm:items-end flex flex-col">
         <h1 className="text-[#0C0C0C] font-bold text-xl">
           The Most Popular Domestic Flights

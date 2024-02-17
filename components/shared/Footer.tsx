@@ -21,9 +21,7 @@ import Featured from "../Featured";
 const Footer = () => {
   return (
     <>
-      <Featured></Featured>
-      <FooterCTA></FooterCTA>
-      <section className="max-w-7xl mx-auto pt-6">
+      <section className="desktop_container mx-auto pt-6">
         {/* //? footer Heading section */}
         <section className="flex flex-col md:flex-row items-center justify-between">
           <div className=" flex gap-4">
@@ -41,7 +39,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col items-center md:items-end mt-3 md:mt-0">
-            <h1 className="font-bold text-xl">Bilito Application</h1>
+            <h1 className="font-bold text-xl">Majestic Application</h1>
             <p className="text-center">
               By installing Billito application, you can enjoy the convenience
               and speed of booking.
