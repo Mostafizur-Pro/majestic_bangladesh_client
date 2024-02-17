@@ -14,9 +14,9 @@ const satisfy = Satisfy({
 
 const Signin = () => {
   return (
-    <div className="desktop_container my-6 flex ">
+    <div className="desktop_container my-6 flex justify-center h-fit ">
       <div
-        className={`h-screen rounded-s-3xl w-1/2 bg-no-repeat bg-[url('https://i.ibb.co/RQq5RWJ/Rectangle-26.png')]`}
+        className={`h-[739px] hidden md:block rounded-s-3xl w-1/2 bg-no-repeat bg-[url('https://i.ibb.co/RQq5RWJ/Rectangle-26.png')]`}
       >
         <h1
           className={`text-5xl text-center pt-24 text-white ${satisfy.className}`}
@@ -28,10 +28,10 @@ const Signin = () => {
           wealth.
         </p>
       </div>
-      <div className="h-screen w-1/2  rounded-e-3xl relative flex flex-col ">
+      <div className=" w-1/2  rounded-e-3xl relative flex flex-col ">
         <Image className="absolute right-0 top-10" alt="plane" src={Airplane} />
 
-        <h1 className="text-7xl font-bold text_Primary text-center mt-24">
+        <h1 className="md:text-7xl text-5xl font-bold text_Primary text-center mt-24">
           Welcome
         </h1>
         <p className="text-center mt-3 text-gray-500">Login with Email</p>
@@ -39,8 +39,8 @@ const Signin = () => {
         <Form />
 
         {/* divider */}
-        <div className="divider w-64 text-sm mx-auto my-6">OR</div>
-        
+        <div className="divider w-48 md:w-64 text-sm mx-auto my-6">OR</div>
+
         <Socials />
 
         <span className="text-sm text-center mt-3">
@@ -54,12 +54,12 @@ const Signin = () => {
         </span>
 
         <Image
-          className="absolute bottom-0"
+          className="absolute bottom-0 lg:block hidden"
           alt="image of tajmahal"
           src={tajmahal}
         />
         <Image
-          className="absolute bottom-0 right-0"
+          className="absolute bottom-0 right-0  lg:block hidden"
           alt="image of others"
           src={others}
         />
