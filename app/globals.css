@@ -25,5 +25,5 @@
   @apply text-[#1D91CC]
 }
 .bg_primary {
-  @apply bg-[#1D91CC]
+  @apply bg-[#1D91CC] hover:bg-[#167db1] duration-300
 }
