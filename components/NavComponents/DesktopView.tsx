@@ -157,7 +157,7 @@ const DesktopView = () => {
             </Dropdown>
           </li>
           <li>Medical</li>
-          <li>Pormotional</li>
+          <li>Promotional</li>
 
           <li>
             <Dropdown menu={otherMenu} icon={true}>
@@ -165,7 +165,7 @@ const DesktopView = () => {
             </Dropdown>
           </li>
         </ul>
-        <button className="bg-[#1D91CC] p-2 hover:bg-[#3f7692] duration-300 rounded-full flex justify-center items-center gap-2">
+        <button className="bg-[#1D91CC] p-2 hover:bg-[#167db1] duration-300 rounded-full flex justify-center items-center gap-2">
           <Dropdown menu={loginMenu} icon={false} width={"w-fit"}>
             <AiOutlineUser className="text-2xl text-white" />
           </Dropdown>
