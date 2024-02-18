@@ -111,12 +111,12 @@ const MobileView = () => {
       path: "/about",
     },
     {
-      name: "Bilito",
-      path: "/bilito",
+      name: "Majestic",
+      path: "/majestic",
     },
     {
-      name: "Why Bilito?",
-      path: "/whybilito",
+      name: "Why Majestic?",
+      path: "/whyMajestic",
     },
     {
       name: "Travel Guide",

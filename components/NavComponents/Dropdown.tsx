@@ -59,7 +59,7 @@ const Dropdown: React.FC<DropdownProps> = ({ children, icon, menu, width }) => {
       <div
         onMouseEnter={handleMenuMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className={`dropdown_menu absolute flex flex-col rounded-xl shadow-xl p-1 top-[10%] bg-white z-50 ${
+        className={`dropdown_menu absolute flex flex-col rounded-xl shadow-xl p-1 top-[7%] bg-white z-50 ${
           isOpen
             ? "opacity-100 duration-300 translate-y-0"
             : "opacity-0 duration-500 pointer-events-none -translate-y-[400px]"
