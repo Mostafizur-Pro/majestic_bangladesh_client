@@ -1,11 +1,13 @@
 import MyFormComponent from "@/components/options/Option";
+ 
 import Ticket from "@/components/shared/Ticket";
-
+ 
 const page = () => {
     return (
         <div className="sm:mt-20 mt-4  max-w-7xl  mx-auto flex">
            
-           <div className=" w-9/12 "> 
+         
+          <div className=" w-9/12  "> 
            <MyFormComponent />
             <div>
              {
@@ -15,9 +17,12 @@ const page = () => {
              }
             </div>
            </div>
-           <div className=" w-3/12 bg-red-600"> d</div>
+           <div className=" w-3/12 bg-red-600 "> 
+          fddd
+           </div>
+          </div>
        
-        </div>
+       
     );
 };
 

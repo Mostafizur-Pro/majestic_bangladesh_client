@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="px-6 lg:px-8 mx-auto grid max-w-7xl relative ">
     <div className="relative">
-      <Image className="w-full h-60 bg-current" src={cover} alt="" />
+      <Image className="w-full sm:h-60 h-40 bg-current" src={cover} alt="" />
     </div>
   
     <div className=" w-full ">
