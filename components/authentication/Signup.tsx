@@ -97,7 +97,7 @@ const Signup = () => {
     </svg>
   );
   return (
-    <div className="bg-img h-[100vh] w-screen bg-cover mb-6 desktop_container rounded-3xl flex p-20">
+    <div className="bg-img h-[650px] relative w-screen bg-cover mb-6 desktop_container rounded-3xl flex p-20">
       <div className="leftside w-1/2 text-white h-full ">
         <div className="mb-10">{logo}</div>
         <h1 className="text-4xl font-bold w-2/5 leading-[50px] mb-6">
@@ -118,7 +118,7 @@ const Signup = () => {
             Facebook
           </div>
         </div>
-        <div className="h-[210px] flex items-end">
+        <div className="absolute bottom-20 flex items-center">
           <div className="flex gap-3">
             <span className="p-1 hover:bg-[#ffffff31] duration-300 rounded-full cursor-pointer">
               <FaLinkedin />
