@@ -1,4 +1,3 @@
-import Form from "./Form";
 import google from "../../assets/signin/google.png";
 import facebook from "../../assets/signin/fb.png";
 import Image from "next/image";
@@ -97,29 +96,29 @@ const Signup = () => {
     </svg>
   );
   return (
-    <div className="bg-img h-[650px] relative w-screen bg-cover mb-6 desktop_container rounded-3xl flex p-10 lg:p-20">
-      <div className="leftside w-1/2 text-white h-full ">
-        <div className="mb-10">{logo}</div>
-        <h1 className="text-4xl font-bold lg:w-2/5 leading-[50px] mb-6">
+    <div className="bg-img md:h-[650px] h-full relative w-screen bg-cover mb-6 desktop_container rounded-3xl flex md:flex-row flex-col-reverse p-3 md:p-10 lg:p-20">
+      <div className="leftside md:w-1/2 w-full text-white h-full ">
+        <div className="mb-10 md:block hidden">{logo}</div>
+        <h1 className="text-4xl font-bold lg:w-2/5 md:block hidden   leading-[50px] mb-6">
           Register an Account.
         </h1>
-        <p className="lg:w-2/3 mb-10">
+        <p className="lg:w-2/3 mb-10 md:block hidden">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
           obcaecati doloribus dolor dolorum? Odit, deserunt! Dolore ut
           exercitationem eius. Harum.
         </p>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 md:justify-start justify-center">
           <div className="flex items-center gap-3 bg-white text-black p-2 rounded-full text-sm cursor-pointer">
             <Image src={google} alt="google login image" />{" "}
             <span className="lg:block hidden">Sign in with Google</span>
           </div>
-          <span>Or</span>
+          <span className="md:text-white text-gray-500">Or</span>
           <div className="flex items-center gap-3 bg-white text-black p-2 rounded-full text-sm cursor-pointer">
             <Image src={facebook} alt="facebook login image" />{" "}
             <span className="lg:block hidden">Sign in with Facebook</span>
           </div>
         </div>
-        <div className="absolute lg:bottom-20 bottom-10 lg:flex items-center ">
+        <div className="absolute lg:bottom-20 md:block hidden bottom-10 lg:flex items-center ">
           <div className="flex gap-3">
             <span className="p-1 hover:bg-[#ffffff31] duration-300 rounded-full cursor-pointer">
               <FaLinkedin />
@@ -133,7 +132,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <div className="rightside w-1/2">
+      <div className="rightside md:w-1/2 w-full ">
         <SignUpForm />
       </div>
     </div>

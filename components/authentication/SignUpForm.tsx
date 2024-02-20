@@ -8,7 +8,7 @@ const SignUpForm = () => {
   const [loading, setLoading] = useState(false);
 
   return (
-    <div className="h-full bg-white rounded-2xl p-6 lg:p-9 border-b-8 border-blue-500 text-center flex flex-col justify-between">
+    <div className="h-full bg-white rounded-2xl p-6 lg:p-9 md:border-b-8 md:border-blue-500 text-center flex flex-col justify-between">
       <>
         <h1 className="text-start text-4xl">Register</h1>
         <form className="lg:mt-10 mt-6 flex flex-col items-start">
