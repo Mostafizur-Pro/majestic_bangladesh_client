@@ -18,12 +18,25 @@
 }
 
 .desktop_container {
-  @apply lg:w-[80%] mx-auto
+  @apply lg:w-[80%] mx-auto;
 }
 
 .text_Primary {
-  @apply text-[#1D91CC]
+  @apply text-[#1D91CC];
 }
 .bg_primary {
-  @apply bg-[#1D91CC] hover:bg-[#167db1] duration-300
+  @apply bg-[#1D91CC] hover:bg-[#167db1] duration-300;
+}
+
+.bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.452)),
+    url("https://images.unsplash.com/photo-1515135682005-9f1fa4ef2264?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+}
+
+@media screen and (max-width: 450px) {
+  .bg-img {
+    background-image: none;
+    background-color: white;
+  }
 }
