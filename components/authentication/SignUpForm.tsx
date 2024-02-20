@@ -8,18 +8,18 @@ const SignUpForm = () => {
   const [loading, setLoading] = useState(false);
 
   return (
-    <div className="h-full bg-white rounded-2xl p-9 border-b-8 border-blue-500 text-center flex flex-col justify-between">
+    <div className="h-full bg-white rounded-2xl p-6 lg:p-9 border-b-8 border-blue-500 text-center flex flex-col justify-between">
       <>
         <h1 className="text-start text-4xl">Register</h1>
-        <form className="mt-10 flex flex-col items-start">
-          <div className="flex justify-between w-full mb-3">
+        <form className="lg:mt-10 mt-6 flex flex-col items-start">
+          <div className="flex lg:flex-row flex-col lg:gap-0 gap-3 justify-between w-full mb-3">
             <label
               className="text-sm flex flex-col items-start"
               htmlFor="firstName"
             >
               FirstName
               <input
-                className="border-2 outline-none focus:outline-blue-500 duration-300 px-3 rounded py-2"
+                className="border-2 outline-none focus:outline-blue-500 duration-300 px-3 lg:w-auto w-full rounded py-2"
                 type="text"
                 name="firstname"
                 placeholder="Enter FirstName"
@@ -31,7 +31,7 @@ const SignUpForm = () => {
             >
               LastName
               <input
-                className="border-2 outline-none focus:outline-blue-500 duration-300 px-3 rounded py-2"
+                className="border-2 outline-none lg:w-auto w-full focus:outline-blue-500 duration-300 px-3 rounded py-2"
                 type="text"
                 name="lastname"
                 placeholder="Enter LastName"
@@ -39,25 +39,25 @@ const SignUpForm = () => {
             </label>
           </div>
           <label
-            className="text-sm flex flex-col items-start mb-3"
+            className="text-sm flex flex-col w-full items-start mb-3"
             htmlFor="email"
           >
             Email
             <input
-              className="border-2 outline-none focus:outline-blue-500 duration-300 px-3 rounded py-2"
+              className="border-2 outline-none w-full focus:outline-blue-500 duration-300 px-3 rounded py-2"
               type="email"
               name="email"
               placeholder="Enter Email"
             />
           </label>
-          <div className="flex justify-between w-full mb-5">
+          <div className="flex lg:flex-row flex-col gap-3 justify-between w-full mb-5">
             <label
               className="text-sm flex flex-col items-start"
               htmlFor="password"
             >
               Password
               <input
-                className="border-2 outline-none focus:outline-blue-500 duration-300 px-3 rounded py-2"
+                className="border-2 outline-none lg:w-auto w-full focus:outline-blue-500 duration-300 px-3 rounded py-2"
                 type="password"
                 name="password"
                 placeholder="Enter Password"
@@ -69,7 +69,7 @@ const SignUpForm = () => {
             >
               Confirm Password
               <input
-                className="border-2 outline-none focus:outline-blue-500 duration-300 px-3 rounded py-2"
+                className="border-2 outline-none lg:w-auto w-full focus:outline-blue-500 duration-300 px-3 rounded py-2"
                 type="password"
                 name="password"
                 placeholder="Confirm Password"

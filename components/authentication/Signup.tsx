@@ -97,28 +97,29 @@ const Signup = () => {
     </svg>
   );
   return (
-    <div className="bg-img h-[650px] relative w-screen bg-cover mb-6 desktop_container rounded-3xl flex p-20">
+    <div className="bg-img h-[650px] relative w-screen bg-cover mb-6 desktop_container rounded-3xl flex p-10 lg:p-20">
       <div className="leftside w-1/2 text-white h-full ">
         <div className="mb-10">{logo}</div>
-        <h1 className="text-4xl font-bold w-2/5 leading-[50px] mb-6">
+        <h1 className="text-4xl font-bold lg:w-2/5 leading-[50px] mb-6">
           Register an Account.
         </h1>
-        <p className="w-2/3 mb-10">
+        <p className="lg:w-2/3 mb-10">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
           obcaecati doloribus dolor dolorum? Odit, deserunt! Dolore ut
           exercitationem eius. Harum.
         </p>
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-3 bg-white text-black p-2 rounded-full text-sm cursor-pointer">
-            <Image src={google} alt="google login image" /> Sign in with Google
+            <Image src={google} alt="google login image" />{" "}
+            <span className="lg:block hidden">Sign in with Google</span>
           </div>
           <span>Or</span>
           <div className="flex items-center gap-3 bg-white text-black p-2 rounded-full text-sm cursor-pointer">
-            <Image src={facebook} alt="facebook login image" /> Sign in with
-            Facebook
+            <Image src={facebook} alt="facebook login image" />{" "}
+            <span className="lg:block hidden">Sign in with Facebook</span>
           </div>
         </div>
-        <div className="absolute bottom-20 flex items-center">
+        <div className="absolute lg:bottom-20 bottom-10 lg:flex items-center ">
           <div className="flex gap-3">
             <span className="p-1 hover:bg-[#ffffff31] duration-300 rounded-full cursor-pointer">
               <FaLinkedin />
